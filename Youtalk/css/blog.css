@@ -1,0 +1,1777 @@
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    justify-content: center;
+    height: 76px;
+}
+
+.header-container {
+    width: 1200px;
+    display: flex;
+    align-items: center;
+}
+
+.header-logo-container {
+    cursor: pointer;
+}
+
+.container {
+    width: 690px;
+    display: flex;
+    align-items: center;
+}
+
+.header-nav {
+    display: flex;
+    margin-left: 51px;
+    margin-right: 144px;
+}
+
+.header-nav__item {
+    cursor: pointer;
+}
+
+.header-nav__list {
+    font-size: 14px;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    gap: 30px;
+}
+
+#sertificates {
+    display: none;
+}
+
+#materials {
+    display: flex;
+    gap: 10px;
+}
+
+#materials::after {
+    content: url('../images/svg/стрелка\ вниз.svg');
+}
+
+.header-button {
+    margin-left: 158px;
+    border: none;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 14px 20px;
+    border-radius: 4px;
+    background-color: #E3F5F5;
+    color: #03B2A5;
+    cursor: pointer;
+    width: 230px;
+    height: 48px;
+}
+
+.burger-menu-wrapper {
+    display: none;
+}
+
+@media (max-width: 1024px) { /* IPad Pro */
+    .header-container {
+        max-width: 960px;
+    }
+
+    .header-nav {
+        margin-left: 32px;
+        margin-right: 20px;
+    }
+
+    .header-button {
+        margin-left: 0;
+    }
+
+    .container {
+        max-width: 714px;
+    }
+
+    .header-nav__list {
+        gap: 16px;
+    }
+    
+    #sertificates {
+        display: block;
+    }
+
+    .burger-menu-wrapper {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) { /* IPad mini */
+    .header-container {
+        max-width: 728px;
+        justify-content: space-between;
+    }
+
+    .container {
+        width: 728px;
+    }
+
+    .header-nav__list {
+        display: none;
+    }
+
+    .header-button {
+        display: none;
+    }
+
+    .burger-menu-wrapper {
+        display: block;
+    }
+}
+
+@media (max-width: 414px) { /* IPhone 11 pro max */
+    .header-container {
+        max-width: 374px;
+        justify-content: space-between;
+    }
+
+    .container {
+        width: 374px;
+    }
+}
+
+@media (max-width: 320px) { /* IPhone SE */
+    .header-container {
+        max-width: 288px;
+    }
+
+    .container {
+        width: 288px;
+    }
+}
+
+/* Main */
+
+main {
+    background-image: url('../images/png/большое\ красное\ пятно.png');
+    background-repeat: no-repeat;
+    background-position: right 0px top 2404px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-hr {
+    width: 100%;
+    color: rgba(239, 245, 251, 1);
+    background-color: rgba(239, 245, 251, 1);
+    margin: 0;
+}
+
+.small-navigation {
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 13px;
+}
+
+#small-navigation-shorter__item {
+    display: none;
+}
+
+#small-navigation-shortest__item {
+    display: none;
+}
+
+.small-navigation__item {
+    margin-top: 16px;
+    margin-bottom: 0px;
+    color: rgba(51, 51, 51, 0.7);
+}
+
+.arrow::after {
+    content: url('../images/svg/срелка\ вправо.svg');
+    margin-left: 9px;
+}
+
+.main-wrapper {
+    display: flex;
+    gap: 228px;
+    margin-top: 54px;
+}
+
+/* Section 1 (Hero) */
+
+.hero-container {
+    display: flex;
+}
+
+.hero {
+    line-height: 24px;
+}
+
+.hero-title {
+    line-height: 56px;
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-weight: 700;
+    font-size: 48px;
+    color: rgba(51, 51, 51, 1);
+}
+
+.hero-author-container {
+    font-size: 14px;
+    display: flex;
+    gap: 8px;
+}
+
+.hero-author {
+    margin: 0;
+    color: rgba(73, 73, 73, 1);
+}
+
+.hero-date {
+    margin: 0;
+    color: rgba(73, 73, 73, 1);
+}
+
+#self {
+    display: none;
+}
+
+.self-text {
+    display: none;
+}
+
+.hero-author__img-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.hero-img-wrapper {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    width: 690px;
+    height: 331px;
+}
+
+.hero-contents-title {
+    margin: 0;
+    font-weight: 700;
+}
+
+.hero-contents-wrapper {
+    margin-top: 16px;
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.hero-contents__item {
+    font-weight: 500;
+    text-decoration: underline;
+    margin: 0;
+}
+
+.greendot::before {
+    content: url('../images/svg/greendot.svg');
+    padding-right: 16px;
+} 
+
+.pushfirst {
+    padding-left: 56px;
+}
+
+.pushsecond {
+    padding-left: 72px;
+}
+
+.pushthird {
+    padding-left: 88px;
+}
+
+.quote-title {
+    margin: 0;
+    padding-bottom: 16px;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.quote-text {
+    margin: 0;
+    padding-bottom: 30px;
+    font-weight: 500;
+}
+
+.quote-second-text {
+    margin: 0;
+    padding-bottom: 40px;
+    font-weight: 500;
+}
+
+.quote-wrapper {
+    background-image: url('../images/svg/кавычки.svg');
+    background-repeat: no-repeat;
+    background-position: top 25px left 25px;
+    width: 690px;
+    height: 162px;
+    border-radius: 16px;
+    background-color: rgba(243, 247, 254, 1);
+}
+
+.quote {
+    margin: 0;
+    padding-top: 34px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 8px;
+}
+
+.quote-author {
+    margin: 0;
+    padding-left: 24px;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.what-else-wrapper {
+    margin-top: 24px;
+}
+
+.what-else-title {
+    font-weight: 700;
+    font-size: 24px;
+    margin: 0;
+    padding-bottom: 16px;
+}
+
+.what-else__item-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.what-else__item {
+    font-weight: 500;
+    margin: 0;
+}
+
+.what-else__item::before {
+    content: url('../images/svg/greendot.svg');
+    padding-right: 16px;
+}
+
+.what-else-img-wrapper {
+    padding-top: 24px;
+    padding-bottom: 16px;
+}
+
+.what-else-img__bottom-text {
+    font-size: 14px;
+    color: rgba(134, 134, 134, 1);
+}
+
+@media (max-width: 1024px) { /* IPad Pro */
+    main {
+        background-image: none;
+    }
+
+    .hero-img-wrapper {
+        width: 714px;
+    }
+
+    .hero-img {
+        width: 714px;
+    }
+
+    #self {
+        display: block;
+        display: flex;
+        align-items: center;
+    }
+    
+    .self-text {
+        display: block;
+        color: #2963A3;
+        margin: 0;
+    }
+
+    .main-wrapper {
+        gap: 24px;
+    }
+
+    .main-wrapper {
+        max-width: 960px;
+    }
+
+    .main-wrapper-container {
+        width: 714px;
+    }
+
+    .pushfirst {
+        display: none;
+    }
+    
+    .pushsecond {
+        display: none;
+    }
+    
+    .pushthird {
+        display: none;
+    }
+
+    #hello-mother {
+        display: none;
+    }
+
+    #like-hello-mother {
+        display: none;
+    }
+
+    .quote-wrapper {
+        width: 714px;
+    }
+
+    .what-else-img-wrapper {
+        width: 714px;
+    }
+
+    .what-else-img {
+        width: 714px;
+    }
+}
+
+@media (max-width: 768px) { /* IPad mini */
+    .main-wrapper {
+        width: 728px;
+        flex-direction: column;
+    }
+
+    .main-wrapper-container {
+        width: 728px;
+    }
+
+    .hero-container {
+        width: 728px;
+    }
+
+    .hero-img-wrapper {
+        width: 728px;
+    }
+
+    .hero-img {
+        width: 728px;
+    }
+
+    .hero {
+        max-width: 728px;
+    }
+
+    .quote-wrapper {
+        width: 728px;
+    }
+
+    .what-else-img-wrapper {
+        width: 728px;
+    }
+
+    .what-else-img {
+        width: 728px;
+    }
+    
+}
+
+@media (max-width: 414px) { /* IPhone 11 pro max */
+    .main-wrapper {
+        width: 374px;
+        margin-top: 32px;
+        gap: 56px;
+    }
+
+    #small-navigation-normal__item {
+        display: none;
+    }
+
+    #small-navigation-shorter__item {
+        display: block;
+    }
+
+    .main-wrapper-container {
+        width: 374px;
+    }
+
+    .hero-container {
+        width: 374px;
+    }
+
+    .hero {
+        width: 374px;
+    }
+
+    .hero-title {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .hero-img-wrapper {
+        width: 374px;
+        height: 207px;
+    }
+
+    .hero-img {
+        width: 374px;
+        height: 207px;
+    }
+
+    .quote-wrapper {
+        width: 374px;
+        height: 218px;
+        background-position: top 10px left 10px;
+    }
+
+    .quote {
+        padding-top: 16px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .quote-author {
+        padding-left: 16px;
+    }
+
+    .what-else-img-wrapper {
+        width: 374px;
+        height: 207px;
+    }
+
+    .what-else-img {
+        width: 374px;
+        height: 207px;
+    }
+}
+
+@media (max-width: 320px) { /* IPhone SE */
+    .main-wrapper {
+        width: 288px;
+        margin-top: 32px;
+        gap: 16px;
+    }
+
+    #small-navigation-shorter__item {
+        display: none;
+    }
+
+    #small-navigation-shortest__item {
+        display: block;
+    }
+
+    .main-wrapper-container {
+        width: 288px;
+    }
+
+    .hero-container {
+        width: 288px;
+    }
+
+    .hero {
+        width: 288px;
+    }
+
+    .hero-title {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .hero-img-wrapper {
+        margin-top: 16px;
+        margin-bottom: 16px;
+        width: 288px;
+        height: 160px;
+    }
+
+    .hero-contents-wrapper {
+        margin-bottom: 16px;
+    }
+
+    .hero-img {
+        width: 288px;
+        height: 160px;
+    }
+
+    .quote-wrapper {
+        width: 288px;
+        height: 290px;
+        background-position: top 10px left 10px;
+    }
+
+    .quote {
+        padding-top: 16px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .quote-author {
+        padding-left: 16px;
+    }
+
+    .what-else-wrapper {
+        margin-top: 16px;
+    }
+
+    .what-else-img-wrapper {
+        width: 288px;
+        height: 160px;
+    }
+
+    .what-else-img {
+        width: 288px;
+        height: 160px;
+    }
+}
+
+/* Download */
+
+.rightside-container {
+    width: 282px;
+    display: flex;
+    flex-direction: column;
+}
+
+.download-container {
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    width: 282px;
+    height: 512px;
+    background-color: rgba(230, 240, 253, 1);
+    border-radius: 16px;
+}
+
+.download-img-wrapper {
+    width: 257px;
+    height: 206px;
+}
+
+.download-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    width: 234px;
+    height: 162px;
+}
+
+.download-title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.download-text {
+    font-size: 14px;
+    margin: 0;
+}
+
+.download-button {
+    cursor: pointer;
+    width: 234px;
+    height: 48px;
+    font-weight: 700;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(53, 179, 169, 1);
+    border: none;
+    border-radius: 4px;
+}
+
+/* Psychologist */
+
+.psychologist {
+    margin-bottom: 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 282px;
+    height: 481px;
+    border: 1px solid #DEDEDE;
+    border-radius: 16px;
+}
+
+.psychologist-info-container {
+    padding-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.psychologist-info-img {
+    border-radius: 50%;
+}
+
+.psychologist-info-name {
+    margin: 0;
+    padding-top: 16px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.psychologist-info-position {
+    margin: 0;
+    padding-top: 5px;
+    font-weight: 600;
+}
+
+.psychologist-info-details-container {
+    font-size: 14px;
+    padding-top: 4px;
+    display: flex;
+    gap: 8px;
+}
+
+.psychologist-info-details__item {
+    margin: 0;
+}
+
+.psychologist-info-hr {
+    width: 250px;
+    margin: 0;
+}
+
+.psychologist-work-container {
+    padding-top: 16px;
+}
+
+.psychologist-work-title {
+    margin: 0;
+    font-weight: 700;
+}
+
+.psychologist-work-orientation__container {
+    font-size: 14px;
+    padding-top: 8px;
+    padding-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.psychologist-work-orientation {
+    margin: 0;
+}
+
+.psychologist-work-orientation::before {
+    content: url('../images/svg/greendot.svg');
+    padding-right: 10px;
+    padding-left: 6px;
+}
+
+.psychologist-work-button {
+    cursor: pointer;
+    width: 250px;
+    height: 48px;
+    font-weight: 700;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    color: #FFFFFF;
+    background-color: #35B3A9;
+}
+
+/* Present Care */
+
+.present-care-container {
+    margin-bottom: 42px;
+    width: 282px;
+    height: 292px;
+    border-radius: 16px;
+    background-image: url('../images/png/дарите\ заботу.png');
+}
+
+/* VideoSessions */
+
+.video-sessions-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../images/png/подарки.png');
+    border: 1px solid #DEDEDE;;
+    width: 282px;
+    height: 304px;
+    border-radius: 24px;
+}
+
+.video-sessions-container-info {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 218px;
+    height: 240px;
+}
+
+.video-sessions-container-info-title-container {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.video-sessions-eight {
+    margin: 0;
+    font-weight: 700;
+    font-size: 24px;
+    color: #2963A3;
+}
+
+.video-sessions-container-info__title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 18px;
+    color: #2963A3;
+}
+
+.video-sessions-container-info__text {
+    font-size: 14px;
+    margin: 0;
+}
+
+.video-sessions-container-info__price {
+    margin: 0;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.video-sessions-container-info__button {
+    cursor: pointer;
+    width: 108px;
+    height: 48px;
+    font-weight: 700;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    color: #FFFFFF;
+    background-color: #35B3A9;
+}
+
+/* Section 2 */
+
+.reactions-container {
+    line-height: 24px;
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 690px;
+}
+
+.reactions-text {
+    margin: 0;
+    font-weight: 500;
+}
+
+.reactions-text-wrapper {
+    background-image: url('../images/png/полупрозрачное\ пятно.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 690px;
+    height: 168px;
+}
+
+.reactions-wrapper-text {
+    margin: 0;
+    width: 480px;
+    height: 96px;
+}
+
+.reactions-img-wrapper {
+    display: flex;
+    gap: 24px;
+}
+
+.reactions-exercise1-wrapper {
+    width: 690px;
+    height: 224px;
+    background-color: rgba(254, 250, 236, 1);
+    border-radius: 16px;
+}
+
+.reactions-exercise-content-container {
+    padding: 24px;
+}
+
+.reactions-exercise1-title {
+    font-weight: 700;
+    font-size: 16px;
+    padding-bottom: 8px;
+    margin: 0;
+}
+
+@media (max-width: 1024px) { /* IPad Pro */
+    .rightside-container {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        width: 222px;
+    }
+
+    .download-container {
+        margin: 0px;
+        width: 222px;
+        height: 495px;
+    }
+
+    .download-img-wrapper {
+        width: 181px;
+        height: 145px;
+    }
+
+    .download-img {
+        width: 181px;
+        height: 145px;
+    }
+
+    .download-text-container {
+        width: 182px;
+        height: 206px;
+        align-items: center;
+    }
+
+    .download-title {
+        width: 120px;
+    }
+    
+    .download-button {
+        width: 182px;
+        height: 48px;
+    }
+
+    .psychologist {
+        margin-bottom: 0;
+        width: 222px;
+        height: 530px;
+    }
+
+    .psychologist-content-container {
+        width: 174px;
+    }
+
+    .psychologist-info-hr {
+        width: 174px;
+    }
+
+    .psychologist-work-button {
+        width: 174px;
+        height: 48px;
+    }
+
+    .present-care-container {
+        margin-bottom: 0;
+        background-size: 100% 100%;
+        width: 222px;
+        height: 292px;
+    }
+
+    .video-sessions-container {
+        margin-bottom: 0;
+        width: 222px;
+        height: 308px;
+    }
+
+    .video-sessions-container-info {
+        width: 174px;
+        height: 260px;
+    }
+
+    .reactions-container {
+        width: 714px;
+    }
+
+    .reactions-exercise1-wrapper {
+        width: 714px;
+    }
+}
+
+@media (max-width: 768px) { /* IPad mini */
+    .rightside-container {
+        width: 728px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0;
+    }
+
+    .download-container {
+        width: 356px;
+        height: 481px;
+    }
+
+    .download-text-container {
+        width: 310px;
+        height: 142px;
+    }
+
+    .download-img-wrapper {
+        width: 257px;
+        height: 206px;
+    }
+
+    .download-img {
+        width: 257px;
+        height: 206px;
+    }
+
+    .download-title {
+        width: 200px;
+    }
+
+    .download-text {
+        width: 100%;
+    }
+
+    .download-text {
+        width: 200px;
+    }
+
+    .download-button {
+        width: 310px;
+        height: 48px;
+    }
+
+    .psychologist {
+        margin-left: 14px;
+        margin-bottom: 36px;
+        width: 356px;
+        height: 481px;
+    }
+
+    .psychologist-content-container {
+        width: 250px;
+    }
+
+    .psychologist-info-hr {
+        width: 250px;
+    }
+
+    .psychologist-work-button {
+        width: 250px;
+        height: 48px;
+    }
+
+    .present-care-container {
+        width: 356px;
+        height: 242px;
+        background-size: 100% 100%;
+        margin-right: 14px;
+    }
+
+    .video-sessions-container {
+        width: 356px;
+        height: 242px;
+    }
+
+    .video-sessions-container-info {
+        width: 291px;
+        height: 220px;
+    }
+
+    .reactions-container {
+        width: 728px;
+    }
+
+    .reactions-exercise1-wrapper {
+        width: 728px;
+    }
+
+    .reactions-text-wrapper {
+        width: 728px;
+    }
+}
+
+@media (max-width: 414px) { /* IPhone 11 pro max */
+    .rightside-container {
+        width: 374px;
+        flex-direction: column;
+        gap: 24px;
+    }
+    
+    .download-container {
+        width: 374px;
+    }
+
+    .psychologist {
+        margin: 0;
+        width: 374px;
+        height: 481px;
+    }
+
+    .present-care-container {
+        width: 374px;
+        height: 280px;
+        margin: 0;
+    }
+
+    .video-sessions-container {
+        width: 374px;
+        height: 248px;
+    }
+
+    .video-sessions-container-info {
+        width: 326px;
+        height: 200px;
+    }
+
+    .reactions-container {
+        width: 374px;
+    }
+
+    .reactions-text-wrapper {
+        width: 374px;
+    }
+
+    .reactions-wrapper-text {
+        height: 144px;
+    }
+
+    .reactions-img-wrapper {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .reactions-img {
+        width: 374px;
+        height: 380px;
+    }
+
+    .reactions-exercise1-wrapper {
+        width: 374px;
+        height: 328px;
+    }
+
+    .reactions-exercise-content-container {
+        padding: 16px;
+    }
+}
+
+@media (max-width: 320px) { /* IPhone SE */
+    .rightside-container {
+        width: 288px;
+        flex-direction: column;
+        gap: 24px;
+    }
+    
+    .download-container {
+        width: 288px;
+    }
+
+    .download-button {
+        width: 239px;
+        height: 48px;
+    }
+
+    .psychologist {
+        width: 288px;
+        height: 481px;
+    }
+
+    .present-care-container {
+        width: 288px;
+        height: 292px;
+    }
+
+    .video-sessions-container {
+        width: 288px;
+        height: 252px;
+    }
+
+    .video-sessions-container-info {
+        width: 254px;
+        height: 220px;
+    }
+
+    .reactions-container {
+        width: 288px;
+        gap: 16px;
+    }
+
+    .reactions-text-wrapper {
+        width: 288px;
+    }
+
+    .reactions-wrapper-text {
+        height: 176px;
+    }
+
+    .reactions-img-wrapper {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .reactions-img {
+        width: 288px;
+        height: 380px;
+    }
+
+    .reactions-exercise1-wrapper {
+        width: 288px;
+        height: 424px;
+    }
+
+    .reactions-exercise-content-container {
+        padding: 16px;
+    }
+}
+
+/* Section 3 */
+
+.anxiety-container {
+    font-weight: 500;
+    margin-top: 24px;
+    line-height: 24px;
+    width: 690px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.anxiety-title-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.anxiety-title {
+    font-weight: 700;
+    font-size: 24px;
+    margin: 0;
+}
+
+.anxiety-text {
+    margin: 0;
+}
+
+.anxiety-img-wrapper {
+    display: flex;
+    gap: 24px;
+}
+
+.anxiety-exercise2-wrapper {
+    background-color: rgba(255, 243, 235, 1);
+    border-radius: 16px;
+}
+
+.anxiety-grid-images-wrapper {
+    display: grid;
+    grid-template-columns: 333px 24px 333px;
+    grid-template-rows: 235px 24px 192px;
+}
+
+.anxiety-grid-image1 {
+    background-image: url('../images/png/стул\ с\ книгами.png');
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.anxiety-grid-image2 {
+    background-image: url('../images/png/девушка\ у\ перилл.png');
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+
+.anxiety-grid-text1 {
+    margin: 0;
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+
+.anxiety-grid-text2 {
+    margin: 0;
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+}
+
+.anxiety-lightning-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.anxiety-exercise3-wrapper {
+    background-color: rgba(3, 178, 165, 0.1);
+    border-radius: 16px;
+}
+
+.reactions-topics-container {
+    font-weight: 400;
+    font-size: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.reactions-topic {
+    color: rgba(41, 99, 163, 1);
+}
+
+.pre-footer-hr {
+    width: 100%;
+    margin-top: 48px;
+    margin-bottom: 72px;
+}
+
+@media (max-width: 1024px) { /* IPad Pro */
+    .anxiety-exercise2-wrapper {
+        width: 714px;
+    }
+    
+    .anxiety-container {
+        width: 714px;
+    }
+
+    .anxiety-grid-images-wrapper {
+        grid-template-columns: 345px 24px 345px;
+        grid-template-rows: 235px 24px 192px;
+    }
+
+    .anxiety-grid-image1 {
+        background-size: 100% 100%;
+    }
+    
+    .anxiety-grid-image2 {
+        background-size: 100% 100%;
+    }
+}
+
+@media (max-width: 768px) { /* IPad mini */
+    .anxiety-container {
+        width: 728px;
+    }
+
+    .anxiety-exercise2-wrapper {
+        width: 728px;
+    }
+
+    .anxiety-grid-images-wrapper {
+        grid-template-columns: 356px 16px 356px;
+        grid-template-rows: 235px 24px 192px;
+    }
+
+    .anxiety-grid-image1 {
+        background-size: 100% 100%;
+    }
+    
+    .anxiety-grid-image2 {
+        background-size: 100% 100%;
+    }
+}
+
+@media (max-width: 414px) { /* IPhone 11 pro max */
+    .anxiety-container {
+        width: 374px;
+    }
+
+    .anxiety-img-wrapper {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .anxiety-img {
+        height: 207px;
+    }
+
+    .anxiety-exercise2-wrapper {
+        width: 374px;
+        height: 328px;
+    }
+
+    .anxiety-grid-images-wrapper {
+        grid-template-columns: 374px;
+        grid-template-rows: 235px 16px 168px 24px 235px 16px 168px;
+    }
+
+    .anxiety-grid-image1 {
+        background-image: url('../images/png/стул\ с\ книгами.png');
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+    
+    .anxiety-grid-image2 {
+        background-image: url('../images/png/девушка\ у\ перилл.png');
+        grid-column: 1 / 2;
+        grid-row: 5 / 6;
+    }
+    
+    .anxiety-grid-text1 {
+        margin: 0;
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+    
+    .anxiety-grid-text2 {
+        margin: 0;
+        grid-column: 1 / 2;
+        grid-row: 7 / 8;
+    }
+}
+
+@media (max-width: 320px) { /* IPhone SE */
+    .anxiety-container {
+        margin-top: 16px;
+        width: 288px;
+        gap: 16px;
+    }
+
+    .anxiety-img-wrapper {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .anxiety-img {
+        height: 160px;
+    }
+
+    .anxiety-exercise2-wrapper {
+        width: 288px;
+        height: 424px;
+    }
+
+    .anxiety-grid-images-wrapper {
+        grid-template-columns: 288px;
+        grid-template-rows: 235px 8px 216px 16px 235px 8px 216px;
+    }
+
+    .anxiety-grid-image1 {
+        background-image: url('../images/png/стул\ с\ книгами.png');
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+    
+    .anxiety-grid-image2 {
+        background-image: url('../images/png/девушка\ у\ перилл.png');
+        grid-column: 1 / 2;
+        grid-row: 5 / 6;
+    }
+    
+    .anxiety-grid-text1 {
+        margin: 0;
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+    
+    .anxiety-grid-text2 {
+        margin: 0;
+        grid-column: 1 / 2;
+        grid-row: 7 / 8;
+    }
+}
+
+/* Section 4 */
+
+.pre-footer-container {
+    margin-bottom: 108px; /* поменять когда появится background-image */
+    display: flex;
+    gap: 303px;
+}
+
+.pre-footer-right-img {
+    position: absolute;
+    right: 0px;
+}
+
+.pre-footer-bottom-img {
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    top: 5550px;
+}
+
+.pre-footer-info-block {
+    width: 348px;
+    height: 280px;
+}
+
+.pre-footer-info-block__title {
+    margin: 0;
+    padding-bottom: 24px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+}
+
+.pre-footer-info-block__subtitle {
+    margin: 0;
+    padding-bottom: 32px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.pre-footer-info-block__button {
+    cursor: pointer;
+    width: 238px;
+    height: 60px;
+    color: #FFFFFF;
+    background-color: #16C8BB;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19.5px;
+    border: none;
+    border-radius: 4px;
+}
+
+@media (max-width: 1024px) { /* IPad Pro */
+    .reactions-topics-container {
+        display: none;
+    }
+
+    .pre-footer-container {
+        display: none;
+    }
+
+    .pre-footer-hr {
+        display: none;
+    }
+}
+
+/* Footer */
+
+footer {
+    height: 302px;
+    background-color: #2963A3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-wrapper {
+    display: flex;
+    gap: 92px;
+    margin-top: 40px;
+    margin-bottom: 24px;
+}
+
+.footer-nav-wrapper {
+    display: flex;
+    gap: 93px;
+}
+
+.footer-nav__ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footer-nav__ul-item {
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.footer-nav-input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-nav-input-block {
+    position: relative;
+    display: flex;
+}
+
+.footer-nav-input {
+    position: relative;
+    width: 384px;
+    height: 48px;
+    border-radius: 4px;
+    border: none;
+}
+
+.footer-nav-input::placeholder {
+    color: #9D9D9D;
+    font-family: "Montserrat", sans-serif;
+    padding: 14px 16px;
+}
+
+.footer-nav-button {
+    cursor: pointer;
+    position: absolute;
+    left: 324px;
+    width: 64px;
+    height: 50px;
+    background-color: #16C8BB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    right: 0px;
+}
+
+.footer-nav-input-title {
+    margin: 0;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.footer-nav-input-subtitle {
+    margin: 0;
+    color: rgba(255, 255, 255, 1);
+    font-size: 12px;
+}
+
+.footer-nav-logo-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.footer-nav-socialmedia {
+    display: flex;
+    gap: 16px;
+}
+
+.footer-hr {
+    width: 1200px;
+    color: rgba(157, 157, 157, 1);
+    background-color: rgba(157, 157, 157, 1);
+}
+
+.footer-postnav {
+    font-weight: 400;
+    font-size: 14px;
+    display: flex;
+    gap: 48px;
+}
+
+.footer-postnav__item {
+    color: rgba(255, 255, 255, 1);
+}
+
+@media (max-width: 1024px) { /* IPad Pro */
+    footer {
+        margin-top: 71px;
+    }
+
+    .footer-postnav-container {
+        width: 100%;
+    }
+
+    .footer-wrapper {
+        gap: 30px;
+    }
+
+    .pre-footer-bottom-img {
+        display: none;
+    }
+
+    .footer-hr {
+        width: 100%;
+        margin: 0;
+    }
+
+    .footer-postnav__item {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 768px) { /* IPad mini */
+    footer {
+        height: 454px;
+        margin-top: 59px;
+    }
+
+    .footer-wrapper {
+        gap: 30px;
+        max-width: 768px;
+        flex-wrap: wrap;
+    }
+
+    .footer-nav-wrapper {
+        gap: 30px;
+    }
+
+    .footer-hr {
+        max-width: 768px;
+    }
+}
+
+@media (max-width: 414px) { /* IPhone 11 pro max */
+     footer {
+        height: 746px;
+    }
+
+    .footer-wrapper {
+        max-width: 395px;
+        flex-wrap: wrap;
+    }
+
+    .footer-nav-wrapper {
+        gap: 158px;
+    }
+
+    .footer-nav-input-container {
+        margin-left: 0;
+    }
+
+    .footer-hr {
+        max-width: 395px;
+    }
+
+    .footer-nav-logo-container {
+        gap: 20px;
+    }
+
+    .footer-postnav {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .footer-postnav__item {
+        margin: 0;
+    }
+}
+
+@media (max-width: 320px) { /* IPhone SE */
+    footer {
+        margin-top: 60px;
+    }
+    
+    .footer-nav-button {
+        display: none;
+    }
+
+    .footer-wrapper {
+        gap: 20px;
+        max-width: 330px;
+        flex-wrap: wrap;
+    }
+
+    .footer-nav-wrapper {
+        gap: 71px;
+    }
+
+    .footer-nav-input-block {
+        max-width: 288px;
+    }
+
+    .footer-nav-input {
+        max-width: 288px;
+    }
+    
+    .footer-hr {
+        max-width: 310px;
+    }
+}
